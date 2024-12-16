@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Task List</h1>
+    </header>
+
+    <section class="task-form">
+      <h2>Add a New Task</h2>
+      <form id="taskForm">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required />
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" />
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" name="dueDate" required />
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section class="task-list">
+      <h2>Tasks</h2>
+      <ul id="tasksContainer"></ul>
+    </section>
+
+    <div id="currentDate"></div>
+
+    <footer>
+      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
